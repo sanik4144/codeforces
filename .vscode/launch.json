@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/BeeCrowd",
-      "program": "f:/BeeCrowd/build/Debug/outDebug",
+      "cwd": "f:/CodeForces",
+      "program": "f:/CodeForces/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

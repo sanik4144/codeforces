@@ -6,16 +6,18 @@ int main()
     cin>>n>>m;
 
     if(m==2){
-            mp=0;
+        mp=0;
+    }
+    else if(m==1){
+         mp=1;
         }
-        else if(m==1){
-            mp=1;
+    else{
+        for(i=2; i<n; i++){
+            if(m%i==0) mp++;
         }
-        else{
-            for(i=2; i<n; i++){
-                if(m%i==0) mp++;
-            }
-        }
+    }
+
+    
     if(mp!=0){
         cout<<"NO"<<endl;
     }
