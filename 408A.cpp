@@ -7,7 +7,7 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>a[i];
     }
-    int ans=0, arr[n],k=0;;
+    int ans=0, arr[n],k=0;
     for(int i=0; i<n; i++){
         ans=0;
         int b[a[i]];
