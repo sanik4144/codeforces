@@ -3,17 +3,24 @@ using namespace std;
 int main()
 {
     int i,j,n,m;
-    string s;
+    string s,str;
+    int flag=1;
 
     cin>>s;
 
     for(i=0;i<s.size(); i++){
         if(s[i]=='W' && s[i+1]=='U' && s[i+2]=='B'){
-            s.erase(remove(s.begin(),s.end(), s[i]),s.end());
-            s.erase(remove(s.begin(),s.end(), s[i+1]),s.end());
-            s.erase(remove(s.begin(),s.end(), s[i+2]),s.end());
+          i+=2;
+          if(!flag){
+	            str+=" ";
+	        }
+	        continue;
+        }
+        else{
+            flag=0;
+            str+=s[i];
         }
     }
-
-    cout<<s;
+    
+    cout<<str<<endl;
 }
