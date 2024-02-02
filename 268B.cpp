@@ -1,13 +1,10 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
-int fact(int n){
-    if(n==1) return 1;
-
-    return n*fact(n-1);
-}
 int main(){
-    int n;
+    int n,sum=0;
     cin>>n;
-
-    cout<<fact(n)+1<<endl;
+    for(int i=0;i<n;i++){
+        sum+=(i+1)*(n-i)-i;
+    }
+    cout<<sum<<endl;
 }
